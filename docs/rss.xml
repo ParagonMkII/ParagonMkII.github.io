@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Paragon Blog</title><link>https://ParagonMkII.github.io</link><description>Change the world</description><copyright>Paragon Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/103414093?v=4</url><title>avatar</title><link>https://ParagonMkII.github.io</link></image><lastBuildDate>Fri, 11 Oct 2024 15:50:13 +0000</lastBuildDate><managingEditor>Paragon Blog</managingEditor><ttl>60</ttl><webMaster>Paragon Blog</webMaster><item><title>LZZExercise2</title><link>https://ParagonMkII.github.io/post/LZZExercise2.html</link><description># 第一步&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Paragon Blog</title><link>https://ParagonMkII.github.io</link><description>Change the world</description><copyright>Paragon Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/103414093?v=4</url><title>avatar</title><link>https://ParagonMkII.github.io</link></image><lastBuildDate>Fri, 11 Oct 2024 15:54:56 +0000</lastBuildDate><managingEditor>Paragon Blog</managingEditor><ttl>60</ttl><webMaster>Paragon Blog</webMaster><item><title>LZZExercise2</title><link>https://ParagonMkII.github.io/post/LZZExercise2.html</link><description># 第一步&#13;
 创建项目，点击Empty Views Activity&#13;
 选择Java语言&#13;
 # 第二步&#13;
@@ -104,8 +104,7 @@
     String name = '林黛玉';&#13;
     System.out.println(name.equals('林黛玉'); //True&#13;
     System.out.println('林黛玉'.equals(name)); //True【推荐：可以避免空指针】&#13;
-。</description><guid isPermaLink="true">https://ParagonMkII.github.io/post/zi-fu-chuan-bi-jiao.html</guid><pubDate>Sun, 06 Oct 2024 16:06:27 +0000</pubDate></item><item><title>10/6</title><link>https://ParagonMkII.github.io/post/10-6.html</link><description>目前仅看到P143，进度较慢&#13;
-预计明天看到P160。</description><guid isPermaLink="true">https://ParagonMkII.github.io/post/10-6.html</guid><pubDate>Sun, 06 Oct 2024 16:00:28 +0000</pubDate></item><item><title>计划9/25</title><link>https://ParagonMkII.github.io/post/ji-hua-9-25.html</link><description># 视频p114-150&#13;
+。</description><guid isPermaLink="true">https://ParagonMkII.github.io/post/zi-fu-chuan-bi-jiao.html</guid><pubDate>Sun, 06 Oct 2024 16:06:27 +0000</pubDate></item><item><title>10/6</title><link>https://ParagonMkII.github.io/post/10-6.html</link><description>1。</description><guid isPermaLink="true">https://ParagonMkII.github.io/post/10-6.html</guid><pubDate>Sun, 06 Oct 2024 16:00:28 +0000</pubDate></item><item><title>计划9/25</title><link>https://ParagonMkII.github.io/post/ji-hua-9-25.html</link><description># 视频p114-150&#13;
 ## 扫描器&#13;
 导入检测键盘输入的包：&#13;
 `import java.util.Scanner;`&#13;
