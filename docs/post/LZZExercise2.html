@@ -40,28 +40,37 @@
 ***
 写入activity_main.xml
 
+    <LinearLayout
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:gravity='center'
+    android:orientation='vertical'>
+
     <ImageView
         android:id='@+id/imageView'
-        android:layout_width='600dp'
-        android:layout_height='800dp'
+        android:layout_width='400dp'
+        android:layout_height='500dp'
         android:scaleType='centerCrop'
-        android:src='@drawable/before'
+        android:src='@drawable/before2'
         android:layout_marginBottom='25dp' />
+
     <android.widget.Button
         android:id='@+id/button1'
-        android:layout_width='300dp'
+        android:layout_width='220dp'
         android:background='@color/buttonBackgroundColor'
-        android:layout_height='150dp'
+        android:layout_height='100dp'
         android:gravity='center'
         android:textSize='30dp'
         android:fontFamily='serif-monospace'
-        android:text='21251109999'
+        android:text='21251109155'
+        android:textStyle='bold'
         android:textColor='@color/buttonTextColor'
         android:layout_gravity='center_horizontal' />
+    </LinearLayout>
 
 *fontFamily*修改字体
 *textSize*修改文字大小
-*width和height*修改长与宽
+*layout_width和layout_height*修改长与宽
 ***
 ## 修改颜色
 **打开app/res/values/colors.xml**
@@ -141,28 +150,37 @@
 ***
 写入activity_main.xml
 
+    <LinearLayout
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:gravity='center'
+    android:orientation='vertical'>
+
     <ImageView
         android:id='@+id/imageView'
-        android:layout_width='600dp'
-        android:layout_height='800dp'
+        android:layout_width='400dp'
+        android:layout_height='500dp'
         android:scaleType='centerCrop'
-        android:src='@drawable/before'
+        android:src='@drawable/before2'
         android:layout_marginBottom='25dp' />
+
     <android.widget.Button
         android:id='@+id/button1'
-        android:layout_width='300dp'
+        android:layout_width='220dp'
         android:background='@color/buttonBackgroundColor'
-        android:layout_height='150dp'
+        android:layout_height='100dp'
         android:gravity='center'
         android:textSize='30dp'
         android:fontFamily='serif-monospace'
-        android:text='21251109999'
+        android:text='21251109155'
+        android:textStyle='bold'
         android:textColor='@color/buttonTextColor'
         android:layout_gravity='center_horizontal' />
+    </LinearLayout>
 
 *fontFamily*修改字体
 *textSize*修改文字大小
-*width和height*修改长与宽
+*layout_width和layout_height*修改长与宽
 ***
 ## 修改颜色
 **打开app/res/values/colors.xml**
@@ -307,28 +325,37 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><strong>由于Button标签无法改变背景颜色，故采用android.widget.Button</strong></p>
 <hr>
 <p>写入activity_main.xml</p>
-<pre class="notranslate"><code class="notranslate">&lt;ImageView
+<pre class="notranslate"><code class="notranslate">&lt;LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"&gt;
+
+&lt;ImageView
     android:id="@+id/imageView"
-    android:layout_width="600dp"
-    android:layout_height="800dp"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
     android:scaleType="centerCrop"
-    android:src="@drawable/before"
+    android:src="@drawable/before2"
     android:layout_marginBottom="25dp" /&gt;
+
 &lt;android.widget.Button
     android:id="@+id/button1"
-    android:layout_width="300dp"
+    android:layout_width="220dp"
     android:background="@color/buttonBackgroundColor"
-    android:layout_height="150dp"
+    android:layout_height="100dp"
     android:gravity="center"
     android:textSize="30dp"
     android:fontFamily="serif-monospace"
-    android:text="21251109999"
+    android:text="21251109155"
+    android:textStyle="bold"
     android:textColor="@color/buttonTextColor"
     android:layout_gravity="center_horizontal" /&gt;
+&lt;/LinearLayout&gt;
 </code></pre>
 <p><em>fontFamily</em>修改字体<br>
 <em>textSize</em>修改文字大小<br>
-<em>width和height</em>修改长与宽</p>
+<em>layout_width和layout_height</em>修改长与宽</p>
 <hr>
 <h2>修改颜色</h2>
 <p><strong>打开app/res/values/colors.xml</strong><br>

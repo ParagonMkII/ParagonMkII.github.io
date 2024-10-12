@@ -28,28 +28,37 @@
 ***
 写入activity_main.xml
 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="600dp"
-        android:layout_height="800dp"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/before"
+        android:src="@drawable/before2"
         android:layout_marginBottom="25dp" />
+
     <android.widget.Button
         android:id="@+id/button1"
-        android:layout_width="300dp"
+        android:layout_width="220dp"
         android:background="@color/buttonBackgroundColor"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:gravity="center"
         android:textSize="30dp"
         android:fontFamily="serif-monospace"
-        android:text="21251109999"
+        android:text="21251109155"
+        android:textStyle="bold"
         android:textColor="@color/buttonTextColor"
         android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
 *fontFamily*修改字体
 *textSize*修改文字大小
-*width和height*修改长与宽
+*layout_width和layout_height*修改长与宽
 ***
 ## 修改颜色
 **打开app/res/values/colors.xml**
