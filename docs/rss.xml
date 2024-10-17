@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Paragon Blog</title><link>https://ParagonMkII.github.io</link><description>Change the world</description><copyright>Paragon Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/103414093?v=4</url><title>avatar</title><link>https://ParagonMkII.github.io</link></image><lastBuildDate>Thu, 17 Oct 2024 06:36:38 +0000</lastBuildDate><managingEditor>Paragon Blog</managingEditor><ttl>60</ttl><webMaster>Paragon Blog</webMaster><item><title>LZZExercise3</title><link>https://ParagonMkII.github.io/post/LZZExercise3.html</link><description># 第一步&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Paragon Blog</title><link>https://ParagonMkII.github.io</link><description>Change the world</description><copyright>Paragon Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/103414093?v=4</url><title>avatar</title><link>https://ParagonMkII.github.io</link></image><lastBuildDate>Thu, 17 Oct 2024 06:41:25 +0000</lastBuildDate><managingEditor>Paragon Blog</managingEditor><ttl>60</ttl><webMaster>Paragon Blog</webMaster><item><title>LZZExercise3</title><link>https://ParagonMkII.github.io/post/LZZExercise3.html</link><description># 第一步&#13;
 1.创建项目，点击Empty Views Activity&#13;
 2.选择Java语言&#13;
 3.RGB取色网站推荐https://link.fobshanghai.com/rgbcolor.htm&#13;
@@ -100,7 +100,7 @@
 &#13;
 3.2 右键这个文件夹并点击“打开于”再点击“资源管理器”&#13;
 &#13;
-3.3 将你的照片导入该文件夹（复制进去）并注意将**2.2步骤**中的`android:background='@drawable/**你的图片名字**'`修改为你图片的名字&#13;
+3.3 将你的照片导入该文件夹（复制进去）并注意将**2.2步骤**中的`android:background='@drawable/你的图片名字'`修改为你图片的名字&#13;
 **例如我将点击按钮前的照片名字改为before，点击按钮后的照片名字改为after**&#13;
 &#13;
 # 第四步&#13;
