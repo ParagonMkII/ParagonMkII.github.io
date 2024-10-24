@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/103414093?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# LZZExercise4
+## 第一步
+1.1 创建项目，点击Empty Views Activity
+1.2 选择Java语言
+1.3 RGB取色网站推荐https://link.fobshanghai.com/rgbcolor.htm
+
+## 第二步
+### 创建工具栏
+**2.1 打开app/res/layout/activity_main.xml**
+将hello world代码块改为以下代码
+
+    <androidx.appcompat.widget.Toolbar
+        android:id='@+id/toolbar'
+        android:layout_width='match_parent'
+        android:layout_height='?attr/actionBarSize'
+        android:background='?attr/colorPrimary'
+        app:title='21251109999_XXX_27XSStar'
+        app:titleTextColor='@android:color/white'/>
+
+修改为自己的学号与姓名
+
+### 修改整体布局
+
+**2.2 将`<?xml version='1.0' encoding='utf-8'?>`下方代码块改为以下代码**
+
+    <LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools='http://schemas.android.com/tools'
+    android:id='@+id/main'
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:background='@drawable/你的背景图名字'
+    android:orientation='vertical'
+    tools:context='.MainActivity'>
+
+并将该文件最后一行代码改为：`</LinearLayout>`
+确保该布局能包裹住页面所有元素
+
+### 加入首页元素
+
+**2.3 在工具栏代码块下方写入以下代码：**
+
+    <TextView
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        android:textColor='#你的文字颜色'
+        android:textSize='你的文字大小'
+        android:text='星座简介：'
+        android:textStyle='你的文字样式'
+        android:layout_margin='5dp'
+        />
+
+    <TextView
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        android:textSize='你的文字大小'
+        android:textColor='#你的文字颜色'
+        android:textStyle='你的文字样式'
+        android:text='在西方占星学上，黄道12星座是字宙方位的代名词，一个人出生时，各星体落入黄道上的位置，说明了一个人的先天性格及天赋。">
+<meta property="og:title" content="LZZExercise4">
+<meta property="og:description" content="# LZZExercise4
+## 第一步
+1.1 创建项目，点击Empty Views Activity
+1.2 选择Java语言
+1.3 RGB取色网站推荐https://link.fobshanghai.com/rgbcolor.htm
+
+## 第二步
+### 创建工具栏
+**2.1 打开app/res/layout/activity_main.xml**
+将hello world代码块改为以下代码
+
+    <androidx.appcompat.widget.Toolbar
+        android:id='@+id/toolbar'
+        android:layout_width='match_parent'
+        android:layout_height='?attr/actionBarSize'
+        android:background='?attr/colorPrimary'
+        app:title='21251109999_XXX_27XSStar'
+        app:titleTextColor='@android:color/white'/>
+
+修改为自己的学号与姓名
+
+### 修改整体布局
+
+**2.2 将`<?xml version='1.0' encoding='utf-8'?>`下方代码块改为以下代码**
+
+    <LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools='http://schemas.android.com/tools'
+    android:id='@+id/main'
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    android:background='@drawable/你的背景图名字'
+    android:orientation='vertical'
+    tools:context='.MainActivity'>
+
+并将该文件最后一行代码改为：`</LinearLayout>`
+确保该布局能包裹住页面所有元素
+
+### 加入首页元素
+
+**2.3 在工具栏代码块下方写入以下代码：**
+
+    <TextView
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        android:textColor='#你的文字颜色'
+        android:textSize='你的文字大小'
+        android:text='星座简介：'
+        android:textStyle='你的文字样式'
+        android:layout_margin='5dp'
+        />
+
+    <TextView
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        android:textSize='你的文字大小'
+        android:textColor='#你的文字颜色'
+        android:textStyle='你的文字样式'
+        android:text='在西方占星学上，黄道12星座是字宙方位的代名词，一个人出生时，各星体落入黄道上的位置，说明了一个人的先天性格及天赋。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ParagonMkII.github.io/post/LZZExercise4.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/103414093?v=4">
+<title>LZZExercise4</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">LZZExercise4</h1>
+<div class="title-right">
+    <a href="https://ParagonMkII.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/ParagonMkII/ParagonMkII.github.io/issues/9" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>LZZExercise4</h1>
+<h2>第一步</h2>
+<p>1.1 创建项目，点击Empty Views Activity<br>
+1.2 选择Java语言<br>
+1.3 RGB取色网站推荐<a href="https://link.fobshanghai.com/rgbcolor.htm" rel="nofollow">https://link.fobshanghai.com/rgbcolor.htm</a></p>
+<h2>第二步</h2>
+<h3>创建工具栏</h3>
+<p><strong>2.1 打开app/res/layout/activity_main.xml</strong><br>
+将hello world代码块改为以下代码</p>
+<pre class="notranslate"><code class="notranslate">&lt;androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:title="21251109999_XXX_27XSStar"
+    app:titleTextColor="@android:color/white"/&gt;
+</code></pre>
+<p>修改为自己的学号与姓名</p>
+<h3>修改整体布局</h3>
+<p><strong>2.2 将<code class="notranslate">&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>下方代码块改为以下代码</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/你的背景图名字"
+android:orientation="vertical"
+tools:context=".MainActivity"&gt;
+</code></pre>
+<p>并将该文件最后一行代码改为：<code class="notranslate">&lt;/LinearLayout&gt;</code><br>
+确保该布局能包裹住页面所有元素</p>
+<h3>加入首页元素</h3>
+<p><strong>2.3 在工具栏代码块下方写入以下代码：</strong></p>
+<pre class="notranslate"><code class="notranslate">&lt;TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#你的文字颜色"
+    android:textSize="你的文字大小"
+    android:text="星座简介："
+    android:textStyle="你的文字样式"
+    android:layout_margin="5dp"
+    /&gt;
+
+&lt;TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="你的文字大小"
+    android:textColor="#你的文字颜色"
+    android:textStyle="你的文字样式"
+    android:text="在西方占星学上，黄道12星座是字宙方位的代名词，一个人出生时，各星体落入黄道上的位置，说明了一个人的先天性格及天赋。黄道12星座象征心理层面，反映出一个人行为的表现的方式。于是将黄道分成12个星座，称为黄道12星座。依次为白羊座、金牛座、双子座、巨蟹座、狮子座、处女座、天秤座、天蝎座、射手座、魔蝎座、水瓶座、双鱼座。"
+    android:layout_margin="5dp"
+    /&gt;
+
+&lt;Button
+    android:id="@+id/button_search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="你的字体样式"
+    android:textSize="你的文字大小"
+    android:textColor="#你的文字颜色"
+    android:text="星座测算"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_horizontal"
+    /&gt;
+
+&lt;TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="你的文字大小"
+    android:textColor="#你的文字颜色"
+    android:textStyle="你的文字样式"
+    android:text="请输入您的姓名："
+    android:layout_margin="5dp"
+    /&gt;
+
+&lt;EditText
+    android:id="@+id/edit_inputname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="你的文字大小"
+    android:textColor="#你的颜色"
+    android:background="#你的颜色"
+    android:layout_margin="5dp"
+    /&gt;
+
+&lt;TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="你的文字大小"
+    android:textColor="#你的颜色"
+    android:text="请输入您的出生日期："
+    android:layout_margin="5dp"
+    android:textStyle="你的字体样式"
+    /&gt;
+
+&lt;DatePicker
+    android:id="@+id/datePicker_birth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#你的颜色"
+    android:layout_gravity="center_horizontal"
+    /&gt;
+</code></pre>
+<h2>第三步</h2>
+<h3>导入图片</h3>
+<p>3.1 在Android Studio中打开app/res/drawable文件夹</p>
+<p>3.2 右键这个文件夹并点击“打开于”再点击“资源管理器”</p>
+<p>3.3 将你的照片导入该文件夹（复制进去）并注意将2.2步骤中的<code class="notranslate">android:background="@drawable/你的图片名字"</code>修改为你背景图片的名字<br>
+<em>例如我将点击按钮前的照片名字改为before，点击按钮后的照片名字改为after</em></p>
+<p>3.4 再将后面需要的星座图片导入进去</p>
+<p>星座图片可以去网课下载<br>
+<a href="https://www.icourse163.org/learn/SZIUT-1449945183?tid=1465433530#/learn/announce" rel="nofollow">https://www.icourse163.org/learn/SZIUT-1449945183?tid=1465433530#/learn/announce</a></p>
+<p>或者去此处：<br>
+通过网盘分享的文件：drawable.zip<br>
+链接: <a href="https://pan.baidu.com/s/1ZJZcnAxWrWI8O64ZlRqilw" rel="nofollow">https://pan.baidu.com/s/1ZJZcnAxWrWI8O64ZlRqilw</a> 提取码: tmyq<br>
+--来自百度网盘超级会员v5的分享</p>
+<h2>第四步</h2>
+<h3>打开MainActivity文件</h3>
+<p>4.1 打开app/java/com.example.你的项目名文件夹</p>
+<p>4.2 打开MainActivity文件</p>
+<p>4.3 导入以下的库</p>
+<pre class="notranslate"><code class="notranslate">import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+</code></pre>
+<p>4.4在<code class="notranslate">public class MainActivity extends AppCompatActivity {</code>下方写入以下代码：</p>
+<pre class="notranslate"><code class="notranslate">//第一步，定义对象
+Button btn_search;
+EditText edit_inputname;
+DatePicker date_birth;
+</code></pre>
+<p>4.5在</p>
+<pre class="notranslate"><code class="notranslate">@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    EdgeToEdge.enable(this);
+    setContentView(R.layout.activity_main);
+</code></pre>
+<p>下方写入以下代码：</p>
+<pre class="notranslate"><code class="notranslate">    //第二步，绑定控件
+    btn_search = findViewById(R.id.button_search);
+    edit_inputname = findViewById(R.id.edit_inputname);
+    date_birth = findViewById(R.id.datePicker_birth);
+
+    //第三步，按钮单击事件
+    btn_search.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this , SecondActivity.class);
+            intent.putExtra("name",edit_inputname.getText().toString());
+            intent.putExtra("year",date_birth.getYear());
+            intent.putExtra("yue",date_birth.getMonth());
+            intent.putExtra("ri",date_birth.getDayOfMonth());
+            startActivity(intent);
+        }
+    });
+    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -&gt; {
+        Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+        v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+        return insets;
+    });
+</code></pre>
+<h2>第五步</h2>
+<h3>创建新的页面</h3>
+<p>5.1 打开“app/java/com.example.你的项目名”文件夹</p>
+<p>5.2 右键这个文件夹，点击“新建”，再点击“Activity”，再点击"Empty Views Activity"<br>
+然后我命名为SecondActivity，你想命名啥都行</p>
+<p><strong>5.3 打开app/res/layout/activity_second.xml文件（名字不同可能是你命名不同，总之点击新的文件）</strong></p>
+<h3>修改布局</h3>
+<p>5.4 将<code class="notranslate">&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>下方的一块布局代码改为：</p>
+<pre class="notranslate"><code class="notranslate">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/after"
+tools:context=".SecondActivity"&gt;
+</code></pre>
+<p>5.5 将代码最后一行改为<code class="notranslate">&lt;/LinearLayout&gt;</code></p>
+<h3>写入各种元素</h3>
+<p>5.6 在中间写入：</p>
+<pre class="notranslate"><code class="notranslate">&lt;androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:title="21251109999_XXX_27XSStar"
+    app:titleTextColor="@android:color/white"/&gt;
+
+&lt;TextView
+    android:id="@+id/textView_getname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="显示获取到的用户名"
+    android:textStyle="你的字体样式"
+    android:textColor="#你的字体颜色"
+    android:textSize="你的字体大小"
+    android:layout_margin="5dp"/&gt;
+
+&lt;TextView
+    android:id="@+id/textView_getbirth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="显示获取到的出生日期"
+    android:textStyle="你的字体样式"
+    android:textColor="#你的字体颜色"
+    android:textSize="你的字体大小"
+    android:layout_margin="5dp"/&gt;
+
+&lt;ImageView
+    android:id="@+id/imageView_imgstar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher_background"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"/&gt;
+
+&lt;TextView
+    android:id="@+id/textView_contentstar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="显示星座的性格特点"
+    android:textColor="#你的字体颜色"
+    android:textStyle="你的字体样式"
+    android:textSize="你的字体大小"
+    android:layout_margin="5dp"/&gt;
+</code></pre>
+<h2>第六步</h2>
+<h3>让新的页面接收数据</h3>
+<p>6.1 打开app/res/values文件夹，打开strings.xml文件<br>
+在该文件中间写入以下代码：</p>
+<pre class="notranslate"><code class="notranslate">&lt;string name="白羊座"&gt;白羊座（3月21日～4月20日）：热情、自信、坚毅、乐观，但同时也显得有些鲁莽、急躁、粗心大意。白羊座的人总是充满了热情和活力，他们可以迅速地掌握新的事物，并愿意为自己追求的梦想奋斗到底。&lt;/string&gt;
+&lt;string name="金牛座"&gt;金牛座（4月21日～5月21日）：稳重、勤劳、务实、细致，但天生奉献者的他们，有时会显得固执，不善于改变。金牛座的人总是注重现实和实用性，他们内心深知自己所追求的东西，会持之以恒地为之奋斗。&lt;/string&gt;
+&lt;string name="双子座"&gt;双子座（5月22日～6月21日）：好奇、机智、灵活、聪慧，但有时显得不够专注，容易分心。双子座的人总是充满了好奇心和热情，他们善于社交，善于沟通，脑子活络，让他们成为人群中的佼佼者。&lt;/string&gt;
+&lt;string name="巨蟹座"&gt;巨蟹座（6月22日～7月22日）：敏感、温和、善良、细腻，但有时显得过于情绪化和依赖。巨蟹座的人总是充满了感性和温暖，他们善于倾听他人的心声，也会付出自己的爱和关怀，是朋友和家人们心灵的寄托。&lt;/string&gt;
+&lt;string name="狮子座"&gt;狮子座（7月23日～8月23日）：自信、热情、领袖气质、勇气，但有时会显得过于自我和独断。狮子座的人总是充满了自信和热情，他们总是希望成为众人瞩目的焦点，并且愿意为此奉献自己的力量和才华。&lt;/string&gt;
+&lt;string name="处女座"&gt;处女座（8月24日～9月23日）：细致、勤奋、聪明、谨慎，但有时显得过于苛求完美和难以满足。处女座的人总是注重细节和实用性，他们不但能够在事业上取得较好的成绩，也在生活中精心打理自己的一切，让自己的生活更加充实和有品质。&lt;/string&gt;
+&lt;string name="天秤座"&gt;天秤座（9月24日～10月23日）：和谐、美感、公正、理智，但有时显得过于优柔寡断和理想化。天秤座的人总是注重平衡和正义，他们善于协调各方利益，追求美感和艺术，让自己的生活充满了色彩和美感。&lt;/string&gt;
+&lt;string name="天蝎座"&gt;天蝎座（10月24日～11月22日）：神秘、坚定、敏锐、具有洞察力，但有时显得过于孤傲和复杂。天蝎座的人总是充满了神秘和力量，他们善于洞察他人的秘密和欲望，也有着蜕变和重生的能力，让自己的内心充满了动力和力量。&lt;/string&gt;
+&lt;string name="射手座"&gt;射手座（11月23日～12月21日）：开朗、热情、乐观、有玩心，但有时显得不够负责任和缺乏深度。射手座的人总是充满了冒险精神和好奇心，他们喜欢旅游和探险，也善于社交和交流，让自己的生活充满了挑战和乐趣。&lt;/string&gt;
+&lt;string name="魔蝎座"&gt;魔蝎座（12月22日～1月20日）：稳重、谨慎、冷静、有耐心，但有时显得过于保守和过于功利。摩羯座的人总是注重事业和实用性，他们勤劳踏实、具备组织才能和领导力，也在威严和权威中体现自己的价值。&lt;/string&gt;
+&lt;string name="水瓶座"&gt;水瓶座（1月21日～2月19日）：开放、思想先进、自由、创新，但有时显得过于理想化和缺乏责任心。水瓶座的人总是充满了好奇心和创造力，他们敢于打破常规，追求自由和创新，让自己的内心充满了新鲜感和刺激。&lt;/string&gt;
+&lt;string name="双鱼座"&gt;双鱼座（2月20日～3月20日）：敏感、温情、浪漫、梦幻，但有时显得过于感性和缺乏理性。双鱼座的人总是充满了浪漫与梦想，他们敏感而富有同情心，希望能够帮助他人，也会给予自己充分的关爱和支持。&lt;/string&gt;
+</code></pre>
+<p>6.2 打开app/java/com.example.你的项目名文件夹<br>
+打开SecondActivity文件，写入以下的库：</p>
+<pre class="notranslate"><code class="notranslate">import android.widget.ImageView;
+import android.widget.TextView;
+</code></pre>
+<p>6.3 将<code class="notranslate">import android.widget.TextView;</code>以下的代码全部删除，导入我写的代码：</p>
+<pre class="notranslate"><code class="notranslate">public class SecondActivity extends AppCompatActivity {
+//第一步，定义对象
+TextView txt_getname, txt_getbirth, txt_contentstar;
+ImageView img_imgstar;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    EdgeToEdge.enable(this);
+    setContentView(R.layout.activity_second);
+
+    //第二步，绑定控件
+    txt_getname = findViewById(R.id.textView_getname);
+    txt_getbirth = findViewById(R.id.textView_getbirth);
+    txt_contentstar = findViewById(R.id.textView_contentstar);
+    img_imgstar = findViewById(R.id.imageView_imgstar);
+
+    //第三步，接收第一页传递过来的值并显示到对应的文本控件里面
+    String strl = getIntent().getStringExtra("name");
+    int myyear = getIntent().getIntExtra("year", 0);
+    int mymonthl = getIntent().getIntExtra("yue", 0);
+    int mymonth = mymonthl + 1;
+    int myday = getIntent().getIntExtra("ri", 0);
+    txt_getname.setText("你好：" + strl);
+    txt_getbirth.setText("您的出生日期为：" + myyear + "年" + mymonth + "月" + myday + "日");
+
+    //第四步，从12张星座图片中与日期对应的一张照片，下标：0-11
+    int[]
+            imgarr = {R.drawable.baiyang, R.drawable.jinniu, R.drawable.shuangzi, R.drawable.juxie, R.drawable.shizi, R.drawable.chunv, R.drawable.tiancheng, R.drawable.tianxie, R.drawable.sheshou, R.drawable.mojie, R.drawable.shuiping, R.drawable.shuangyu};
+    int[]
+            contentarr = {R.string.白羊座, R.string.金牛座, R.string.双子座, R.string.巨蟹座, R.string.狮子座, R.string.处女座, R.string.天秤座, R.string.天蝎座, R.string.射手座, R.string.魔蝎座, R.string.水瓶座, R.string.双鱼座};
+
+    //第五步，根据选择的年月日从数组里找对应的图片和文字
+    int i = find(mymonth, myday);
+    img_imgstar.setImageResource((imgarr[i]));
+    txt_contentstar.setText(contentarr[i]);
+
+    ViewCompat.setOnApplyWindowInsetsListener(
+
+            findViewById(R.id.main), (v, insets) -&gt;
+
+            {
+                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                return insets;
+            });
+
+}
+    private int find( int mymonth, int myday){
+        int i = 0;
+        if (mymonth == 3 &amp;&amp; myday &gt;= 21 || mymonth == 4 &amp;&amp; myday &lt;= 19) {
+            i = 0;
+        }
+        if (mymonth == 4 &amp;&amp; myday &gt;= 20 || mymonth == 5 &amp;&amp; myday &lt;= 20) {
+            i = 1;
+        }
+        if ((mymonth == 5 &amp;&amp; myday &gt;= 21) || mymonth == 6 &amp;&amp; myday &lt;= 21) {
+            i = 2;
+        }
+
+        if ((mymonth == 6 &amp;&amp; myday &gt;= 22) || mymonth == 7 &amp;&amp; myday &lt;= 22) {
+            i = 3;
+        }
+        if ((mymonth == 7 &amp;&amp; myday &gt;= 23) || mymonth == 8 &amp;&amp; myday &lt;= 22) {
+            i = 4;
+        }
+        if ((mymonth == 8 &amp;&amp; myday &gt;= 23) || mymonth == 9 &amp;&amp; myday &lt;= 22) {
+            i = 5;
+        }
+
+        if ((mymonth == 9 &amp;&amp; myday &gt;= 23) || mymonth == 10 &amp;&amp; myday &lt;= 23) {
+            i = 6;
+        }
+        if ((mymonth == 10 &amp;&amp; myday &gt;= 24) || mymonth == 11 &amp;&amp; myday &lt;= 22) {
+            i = 7;
+        }
+        if ((mymonth == 11 &amp;&amp; myday &gt;= 23) || mymonth == 12 &amp;&amp; myday &lt;= 21) {
+            i = 8;
+        }
+
+        if ((mymonth == 12 &amp;&amp; myday &gt;= 22) || mymonth == 1 &amp;&amp; myday &lt;= 19) {
+            i = 9;
+        }
+        if ((mymonth == 1 &amp;&amp; myday &gt;= 20) || mymonth == 2 &amp;&amp; myday &lt;= 18) {
+            i = 10;
+        }
+        if ((mymonth == 2 &amp;&amp; myday &gt;= 19) || mymonth == 3 &amp;&amp; myday &lt;= 20) {
+            i = 11;
+        }
+
+
+        return i;
+    }
+}
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://ParagonMkII.github.io">Paragon Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","ParagonMkII/ParagonMkII.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
