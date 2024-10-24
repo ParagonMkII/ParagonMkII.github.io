@@ -181,11 +181,6 @@ https://www.icourse163.org/learn/SZIUT-1449945183?tid=1465433530#/learn/announce
                 startActivity(intent);
             }
         });
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
 ## 第五步
 

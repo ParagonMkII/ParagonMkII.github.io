@@ -358,11 +358,6 @@ protected void onCreate(Bundle savedInstanceState) {
             startActivity(intent);
         }
     });
-    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -&gt; {
-        Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-        v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-        return insets;
-    });
 </code></pre>
 <h2>第五步</h2>
 <h3>创建新的页面</h3>
