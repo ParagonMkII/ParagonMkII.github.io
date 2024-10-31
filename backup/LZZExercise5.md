@@ -10,6 +10,10 @@
 2.4 在Android Studio中打开app/res/drawable文件夹
 2.5 右键这个文件夹并点击“打开于”再点击“资源管理器”
 2.6 将你的照片和箭头图片导入该文件夹（复制进去）
+*网课的箭头图片*
+通过网盘分享的文件：drawable.zip
+链接: https://pan.baidu.com/s/1h-vHjsa33PtoxojVG30tzw 提取码: uqbs 
+--来自百度网盘超级会员v5的分享
 
 2.5 在中间复制代码进去
 
